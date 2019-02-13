@@ -1,1 +1,2 @@
-# go-dtw
+# tscluster
+tscluster is time-series clustering implemented in Go.  
