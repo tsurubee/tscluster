@@ -1,13 +1,13 @@
 package tscluster
 
 type Tscluster struct {
-	DistanceFunc DistanceFunc
+	DistFunc DistFunc
 }
 
-type DistanceFunc func([]float64, []float64) (float64, error)
+type DistFunc func([]float64, []float64) (float64, error)
 
-func NewTscluster(distance DistanceFunc) *Tscluster {
+func NewTscluster(distance DistFunc) *Tscluster {
 	return &Tscluster{
-		DistanceFunc: distance,
+		DistFunc: distance,
 	}
 }
